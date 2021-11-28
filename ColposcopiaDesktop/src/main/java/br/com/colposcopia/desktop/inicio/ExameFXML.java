@@ -17,7 +17,7 @@ public class ExameFXML {
 	
 	@FXML
 	private void abrirImagem() {
-
+		
 	}
 	
 	@FXML

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="558.0" prefWidth="634.0" stylesheets="@bootstrap3.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.colposcopia.desktop.inicio.ExameFXML">
+   <top>
+      <HBox prefHeight="11.0" prefWidth="621.0" styleClass="app-colpo-barra-superior" stylesheets="@app.css" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <ScrollPane pannable="true" prefHeight="536.0" prefWidth="621.0" BorderPane.alignment="CENTER">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="580.0" prefWidth="601.0" styleClass="menu-bar">
+               <children>
+                  <VBox prefHeight="580.0" prefWidth="611.0" spacing="5.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="377.0" spacing="5.0">
+                           <children>
+                              <Label styleClass="lbl" text="Nome .:">
+                                 <font>
+                                    <Font name="Serif Regular" size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="textNome" prefWidth="237.0" styleClass="text-field" />
+                              <Button minWidth="24.0" mnemonicParsing="false" onAction="#abrirImagem" prefWidth="24.0" />
+                              <Label styleClass="lbl" text="   Data Nascimento .:">
+                                 <font>
+                                    <Font name="Serif Regular" size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="textDataNasc" layoutX="116.0" layoutY="14.0" prefWidth="108.0" styleClass="text-field" />
+                           </children>
+                        </HBox>
+                        <Line endX="489.29290771484375" endY="-1.0355340242385864" startX="-100.0" />
+                        <HBox prefHeight="17.0" prefWidth="601.0">
+                           <children>
+                              <Label styleClass="lbl" text=" Descrição Macroscópica">
+                                 <font>
+                                    <Font name="Serif Regular" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <TextArea fx:id="textDescricaoMacro" prefHeight="44.0" prefWidth="601.0" styleClass="form-control">
+                           <font>
+                              <Font name="SansSerif Regular" size="13.0" />
+                           </font>
+                        </TextArea>
+                        <Label styleClass="lbl" text="Avaliação">
+                           <font>
+                              <Font name="SansSerif Regular" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="textAvaliacao" prefHeight="44.0" prefWidth="601.0" styleClass="form-control">
+                           <font>
+                              <Font name="SansSerif Regular" size="13.0" />
+                           </font>
+                        </TextArea>
+                        <Label styleClass="lbl" text="Achados Colposcópicos Normais">
+                           <font>
+                              <Font name="SansSerif Regular" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="textAchadosColpoNormais" prefHeight="44.0" prefWidth="601.0" styleClass="form-control">
+                           <font>
+                              <Font name="SansSerif Regular" size="13.0" />
+                           </font>
+                        </TextArea>
+                        <Label styleClass="lbl" text="Achados Colposcópicos Anormais">
+                           <font>
+                              <Font name="SansSerif Regular" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="textAchadosColpoAnormais" prefHeight="44.0" prefWidth="601.0" styleClass="form-control">
+                           <font>
+                              <Font name="SansSerif Regular" size="13.0" />
+                           </font>
+                        </TextArea>
+                        <Label layoutX="20.0" layoutY="231.0" styleClass="lbl" text="Outros Anormais">
+                           <font>
+                              <Font name="SansSerif Regular" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="textOutroAnormais" layoutX="20.0" layoutY="252.0" prefHeight="44.0" prefWidth="601.0" styleClass="form-control">
+                           <font>
+                              <Font name="SansSerif Regular" size="13.0" />
+                           </font>
+                        </TextArea>
+                        <Label layoutX="20.0" layoutY="301.0" styleClass="lbl" text="Conclusão">
+                           <font>
+                              <Font name="SansSerif Regular" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="textConclusao" layoutX="20.0" layoutY="322.0" prefHeight="44.0" prefWidth="601.0" styleClass="form-control">
+                           <font>
+                              <Font name="SansSerif Regular" size="13.0" />
+                           </font>
+                        </TextArea>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER_LEFT" prefHeight="39.0" prefWidth="634.0" spacing="5.0" styleClass="app-colpo-barra-superior" stylesheets="@app.css" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#geraRelatorio" prefHeight="44.0" prefWidth="128.0" styleClass="success" text="Gerar Relátorio" />
+            <Button mnemonicParsing="false" onAction="#carregaTemplate" prefWidth="81.0" styleClass="primary" text="Prontos" />
+         </children>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+   </bottom>
+</BorderPane>

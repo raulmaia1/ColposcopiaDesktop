@@ -70,3 +70,8 @@
     -fx-scale-y: 0.9;
     -fx-scale-z: 0.9;
 }
+
+.app-colpo-barra-superior{
+	-fx-background-color: linear-gradient(#59c8d7, #59c8d7, #59c8d7);
+}
+

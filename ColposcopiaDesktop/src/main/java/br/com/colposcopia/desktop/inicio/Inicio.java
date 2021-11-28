@@ -1,4 +1,4 @@
-package br.com.colposcopia.destop;
+package br.com.colposcopia.desktop.inicio;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

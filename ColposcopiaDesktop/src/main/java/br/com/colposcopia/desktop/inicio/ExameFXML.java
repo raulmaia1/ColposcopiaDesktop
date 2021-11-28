@@ -32,6 +32,8 @@ public class ExameFXML {
 			.build();
 		
 		new ExameColposcopicoJDBCDAo().adiciona(exame);
+		
+		new ExameColposcopicoReport().imprimir(exame);
 	}
 	
 	@FXML

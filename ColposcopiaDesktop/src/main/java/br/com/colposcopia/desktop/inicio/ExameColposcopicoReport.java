@@ -7,6 +7,7 @@ public class ExameColposcopicoReport {
 	
 	public void imprimir(ExameColposcopico exame) {
 		
+		
 	}
 
 }

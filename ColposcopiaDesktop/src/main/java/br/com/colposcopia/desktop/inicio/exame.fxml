@@ -13,16 +13,16 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="558.0" prefWidth="634.0" stylesheets="@bootstrap3.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.colposcopia.desktop.inicio.ExameFXML">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="634.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.colposcopia.desktop.inicio.ExameFXML">
    <top>
       <HBox prefHeight="11.0" prefWidth="621.0" styleClass="app-colpo-barra-superior" stylesheets="@app.css" BorderPane.alignment="CENTER" />
    </top>
    <center>
-      <ScrollPane pannable="true" prefHeight="536.0" prefWidth="621.0" BorderPane.alignment="CENTER">
+      <ScrollPane pannable="true" prefHeight="536.0" prefWidth="621.0" stylesheets="@bootstrap3.css" BorderPane.alignment="CENTER">
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="580.0" prefWidth="601.0" styleClass="menu-bar">
                <children>
-                  <VBox prefHeight="580.0" prefWidth="611.0" spacing="5.0">
+                  <VBox prefHeight="580.0" prefWidth="611.0" spacing="5.0" stylesheets="@bootstrap3.css">
                      <children>
                         <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="377.0" spacing="5.0">
                            <children>
@@ -38,7 +38,8 @@
                                     <Font name="Serif Regular" size="13.0" />
                                  </font>
                               </Label>
-                              <TextField fx:id="textDataNasc" layoutX="116.0" layoutY="14.0" prefWidth="108.0" styleClass="text-field" />
+                              
+							  <TextField fx:id="textDataNasc" layoutX="116.0" layoutY="14.0" prefWidth="108.0" styleClass="text-field" />	
                            </children>
                         </HBox>
                         <Line endX="489.29290771484375" endY="-1.0355340242385864" startX="-100.0" />
@@ -117,13 +118,22 @@
       </ScrollPane>
    </center>
    <bottom>
-      <HBox alignment="CENTER_LEFT" prefHeight="39.0" prefWidth="634.0" spacing="5.0" styleClass="app-colpo-barra-superior" stylesheets="@app.css" BorderPane.alignment="CENTER">
+      <HBox prefHeight="56.0" prefWidth="634.0" spacing="5.0" styleClass="app-colpo-barra-superior" stylesheets="@app.css" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" onAction="#geraRelatorio" prefHeight="44.0" prefWidth="128.0" styleClass="success" text="Gerar Relátorio" />
-            <Button mnemonicParsing="false" onAction="#carregaTemplate" prefWidth="81.0" styleClass="primary" text="Prontos" />
+            <Button alignment="BOTTOM_CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#geraRelatorio" prefHeight="49.0" prefWidth="119.0" styleClass="app-colpo-button-gera-relatorio" text="Gerar Relátorio" textAlignment="CENTER" wrapText="true">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Button>
+            <Button alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="20.0" layoutY="15.0" mnemonicParsing="false" onAction="#carregaTemplate" prefHeight="49.0" prefWidth="78.0" styleClass="app-colpo-button-gera-pronto" text="Prontos" textAlignment="CENTER" />
+            <HBox alignment="CENTER_RIGHT" prefHeight="51.0" prefWidth="419.0">
+               <children>
+                  <Button alignment="BOTTOM_CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#abrirImagem" prefHeight="49.0" prefWidth="78.0" styleClass="app-colpo-button-gera-imagem" text="Imagens" textAlignment="CENTER" />
+               </children>
+            </HBox>
          </children>
          <padding>
-            <Insets left="10.0" />
+            <Insets left="10.0" top="5.0" />
          </padding>
       </HBox>
    </bottom>

@@ -4,7 +4,7 @@ import br.com.colposcopia.desktop.bean.ExameColposcopico;
 
 public class ExameColposcopicoBuilder {
 
-	private String descricaoMacro, avaliacao, achadosColpoNormais, achadosColpoANormais, outroAnormais, conclusao;
+	private String descricaoMacro, avaliacao, achadosColpoNormais, achadosColpoANormais, outroAnormais, conclusao,nomePaciente,dataNascimento;
 
 	public ExameColposcopicoBuilder addDescricaoMacro(String descricaoMacro) {
 		this.descricaoMacro = descricaoMacro;
@@ -36,6 +36,16 @@ public class ExameColposcopicoBuilder {
 		return this;
 	}
 
+	public ExameColposcopicoBuilder addNomePaciente(String nomePaciente) {
+		this.nomePaciente = nomePaciente;
+		return this;
+	}
+	
+	public ExameColposcopicoBuilder addDataNascimento(String dataNascimento) {
+		this.dataNascimento = dataNascimento;
+		return this;
+	}
+	
 	public ExameColposcopico build() {
 		ExameColposcopico exameColposcopico = new ExameColposcopico();
 		exameColposcopico.setAchadosColpoANormais(achadosColpoANormais);
@@ -44,8 +54,12 @@ public class ExameColposcopicoBuilder {
 		exameColposcopico.setConclusao(conclusao);
 		exameColposcopico.setOutroAnormais(outroAnormais);
 		exameColposcopico.setDescricaoMacro(descricaoMacro);
+		exameColposcopico.setDataNascimento(dataNascimento);
+		exameColposcopico.setNomePaciente(nomePaciente);
 		
 		return exameColposcopico;
 	}
+
+
 	
 }

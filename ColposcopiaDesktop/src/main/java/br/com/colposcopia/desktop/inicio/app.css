@@ -66,12 +66,87 @@
 }
 /* https://stackoverflow.com/questions/30273020/style-pressed-button-in-javafx */
 .novo-button-salvar:pressed {
-   -fx-scale-x: 0.9;
-    -fx-scale-y: 0.9;
-    -fx-scale-z: 0.9;
+	-fx-scale-x: 0.9;
+	-fx-scale-y: 0.9;
+	-fx-scale-z: 0.9;
 }
 
-.app-colpo-barra-superior{
+.app-colpo-barra-superior {
 	-fx-background-color: linear-gradient(#59c8d7, #59c8d7, #59c8d7);
 }
 
+.app-colpo-button-gera-pronto {
+	-fx-background-color: transparent;
+/* 	https://stackoverflow.com/questions/49853541/javafx-button-with-circular-background-image */
+	-fx-background-image: url("outline_list_black_24dp.png");
+/* 	-fx-background-size: 30px; */
+	-fx-background-repeat: no-repeat;
+    -fx-background-size: 30px, 30px;
+    -fx-background-position: top;
+    -fx-border-radius: 30;
+}
+
+.app-colpo-button-gera-pronto:hover {
+	-fx-background-color: linear-gradient(#0e97a6, #0e97a6, #0e97a6);
+}
+
+
+.app-colpo-button-gera-relatorio:hover {
+	-fx-background-color: linear-gradient(#0e97a6, #0e97a6, #0e97a6);
+}
+
+.app-colpo-button-gera-relatorio {
+	-fx-background-color: transparent;
+/* 	https://stackoverflow.com/questions/49853541/javafx-button-with-circular-background-image */
+	-fx-background-image: url("outline_article_black_24dp.png");
+/* 	-fx-background-size: 30px; */
+	-fx-background-repeat: no-repeat;
+    -fx-background-size: 30px, 30px;
+    -fx-background-position: top;
+    -fx-border-radius: 30;
+ }
+ 
+.app-colpo-button-gera-imagem:hover {
+	-fx-background-color: linear-gradient(#0e97a6, #0e97a6, #0e97a6);
+}
+ 
+.app-colpo-button-gera-imagem {
+	-fx-background-color: transparent;
+/* 	https://stackoverflow.com/questions/49853541/javafx-button-with-circular-background-image */
+	-fx-background-image: url("outline_perm_media_black_24dp.png");
+/* 	-fx-background-size: 30px; */
+	-fx-background-repeat: no-repeat;
+    -fx-background-size: 30px, 30px;
+    -fx-background-position: top;
+    -fx-border-radius: 30;
+}
+
+.app-colpo-button-gera-foto:hover {
+	-fx-background-color: linear-gradient(#0e97a6, #0e97a6, #0e97a6);
+}
+ 
+.app-colpo-button-gera-foto {
+	-fx-background-color: transparent;
+/* 	https://stackoverflow.com/questions/49853541/javafx-button-with-circular-background-image */
+	-fx-background-image: url("outline_photo_camera_black_24dp.png");
+/* 	-fx-background-size: 30px; */
+	-fx-background-repeat: no-repeat;
+    -fx-background-size: 30px, 30px;
+    -fx-background-position: top;
+    -fx-border-radius: 30;
+}
+
+.app-colpo-button-gera-ok:hover {
+	-fx-background-color: linear-gradient(#0e97a6, #0e97a6, #0e97a6);
+}
+
+.app-colpo-button-gera-ok {
+	-fx-background-color: transparent;
+/* 	https://stackoverflow.com/questions/49853541/javafx-button-with-circular-background-image */
+	-fx-background-image: url("outline_done_outline_black_24dp.png");
+/* 	-fx-background-size: 30px; */
+	-fx-background-repeat: no-repeat;
+    -fx-background-size: 30px, 30px;
+    -fx-background-position: top;
+    -fx-border-radius: 30;
+}

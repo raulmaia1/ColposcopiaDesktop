@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="461.0" prefWidth="588.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.colposcopia.desktop.inicio.ImagemFXML">
+   <top>
+      <HBox prefHeight="11.0" prefWidth="621.0" styleClass="app-colpo-barra-superior" stylesheets="@app.css" BorderPane.alignment="CENTER" />
+   </top>
+   <bottom>
+      <HBox prefHeight="56.0" prefWidth="634.0" spacing="5.0" styleClass="app-colpo-barra-superior" stylesheets="@app.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="51.0" prefWidth="472.0">
+               <children>
+                  <HBox prefHeight="56.0" prefWidth="216.0" spacing="10.0">
+                     <children>
+                        <Button alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#carregaImagem" prefHeight="49.0" prefWidth="102.0" styleClass="app-colpo-button-gera-imagem" text="Carregar" textAlignment="CENTER" wrapText="true" />
+                        <Button alignment="BOTTOM_CENTER" disable="true" mnemonicParsing="false" prefHeight="49.0" prefWidth="103.0" styleClass="app-colpo-button-gera-foto" text="WebCam" textAlignment="CENTER" wrapText="true" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <Button alignment="BOTTOM_CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#abrirPronto" prefHeight="49.0" prefWidth="119.0" styleClass="app-colpo-button-gera-ok" text="Pronto " textAlignment="CENTER" wrapText="true">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="10.0" top="5.0" />
+         </padding>
+      </HBox>
+   </bottom>
+   <center>
+      <VBox fx:id="painel1" prefHeight="200.0" prefWidth="100.0" spacing="5.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </center>
+</BorderPane>
